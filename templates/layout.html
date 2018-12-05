@@ -42,5 +42,8 @@
                 <a href="{% url 'courses:list' %}">Courses</a>
             </nav>-->
             {% block content %}{% endblock %}          
-        </div>    
+        </div>
+         <div class="minerals__random">
+              <a class="minerals__anchor" href="{% url 'courses:detail' pk=rand %}">Show random mineral</a>
+            </div>
 </html>
